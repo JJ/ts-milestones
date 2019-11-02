@@ -9,9 +9,7 @@ beforeAll(() => {
 
 
 test("all", () => {
-    console.log( data.show_state() );
     expect(  data.show_state() ).toBe( State.Open );
     data.close();
-    console.log( data.show_state() );
     expect(  data.show_state() ).toBe( State.Closed );
 });
