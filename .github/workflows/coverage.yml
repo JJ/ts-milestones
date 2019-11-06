@@ -9,8 +9,13 @@ jobs:
       - uses: actions/checkout@v1
         with:
           fetch-depth: 1
-      - run: npm install
-      - run: sudo npm install -g jest nyc codecov
-      - run: jest
-      - run: mkdir coverage && nyc report --reporter=json > coverage/coverage.json
-      - run: codecov
+      - name: Instalación general
+        run: npm install
+      - name: Instala tests y cobertura
+        run: sudo npm install -g jest nyc codecov
+      - name: Ejecuta tests de cobertura
+        run: jest --coverage
+      - name: Crea los informes
+        run: mkdir coverage && nyc report --reporter=json > coverage/coverage.json
+      - name: Sube los tests
+        run: codecov
