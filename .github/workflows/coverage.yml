@@ -16,6 +16,6 @@ jobs:
       - name: Ejecuta tests de cobertura
         run: jest --coverage
       - name: Crea los informes
-        run: mkdir coverage && nyc report --reporter=json > coverage/coverage.json
+        run: nyc report --reporter=json > coverage/coverage.json
       - name: Sube los tests
         run: codecov
