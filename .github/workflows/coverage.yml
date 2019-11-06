@@ -14,7 +14,7 @@ jobs:
       - name: Instala tests y cobertura
         run: sudo npm install -g jest nyc codecov
       - name: Ejecuta tests de cobertura
-        run: jest --coverage
+        run: nyc jest --coverage
       - name: Crea los informes
         run: nyc report --reporter=json > coverage/coverage.json
       - name: Sube los tests
