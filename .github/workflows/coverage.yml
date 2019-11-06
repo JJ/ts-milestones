@@ -12,5 +12,5 @@ jobs:
       - run: npm install
       - run: sudo npm install -g jest nyc codecov
       - run: jest
-      - run: mkdir coverage/nyc report --reporter=json > coverage/coverage.json
+      - run: mkdir coverage && nyc report --reporter=json > coverage/coverage.json
       - run: codecov
