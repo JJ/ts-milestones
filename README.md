@@ -1,5 +1,10 @@
-# typescript-module-template 
+# Milestones in TypeScript
 
-A template for TypesSript classes, with `jest` already included.
+[![codecov](https://codecov.io/gh/JJ/ts-milestones/branch/master/graph/badge.svg)](https://codecov.io/gh/JJ/ts-milestones)
 
-To use this, just click on "Use this template" above. Class files will go to the `src` directory, tests to the `src/__tests__` diretory.
+A (mostly) academic attempt to create an entity composed by a set of classes that represent a project in GitHub, including milestones and issues. The only part of the project we're interested in is its degree of completion.
+
+
+## Install
+
+Clone it using GitHub, and do the usual thing.
