@@ -1,8 +1,8 @@
 import { Issue, State } from "../Project/Issue";
 import { Milestone, ProjectError } from "../Project";
 
-var data: Issue;
-var milestone: Milestone;
+let data: Issue;
+let milestone: Milestone;
 const project_name: string = "Foo";
 
 beforeAll(() => {
