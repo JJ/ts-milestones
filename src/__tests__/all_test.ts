@@ -1,4 +1,5 @@
-import { Issue, Milestone, ProjectError, State } from "../Project";
+import { Issue, State } from "../Project/Issue";
+import { Milestone, ProjectError } from "../Project";
 
 var data: Issue;
 var milestone: Milestone;
