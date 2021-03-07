@@ -1,5 +1,6 @@
 import { Issue, State } from "../Project/Issue";
-import { Milestone, ProjectError } from "../Project";
+import { Milestone } from "../Project/Milestone";
+import { ProjectError } from "../Project";
 
 let data: Issue;
 let milestone: Milestone;
