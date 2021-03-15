@@ -4,9 +4,10 @@ node_js:
   - 10
   - 12
   - 14
+  - node
 
 install:
-  - npm ci
+  - npm i
 
 script:
   - npm run test-only
