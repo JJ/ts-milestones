@@ -35,7 +35,7 @@
     "gulp-jest": "^4.0.3",
     "husky": "^3.0.9",
     "jest": "^26.0.0",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "nyc": "^15.0.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
