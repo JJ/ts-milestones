@@ -10,7 +10,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Instalación general
-        run: npm install
+        run: npm ci
       - name: Ejecuta tests de cobertura
         run: npm run coverage
       - name: Crea los informes
