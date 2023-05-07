@@ -13,19 +13,20 @@
     "test": "jest",
     "prepare": "tsc",
     "build": "tsc",
-    "test-only": "jest"
+    "coverage": "nyc jest --coverage",
+    "coverage-reports": "nyc report --reporter=json > coverage/coverage.json && codecov"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JJ/typescript-module-template.git"
+    "url": "git+https://github.com/JJ/ts-milestones.git"
   },
   "keywords": [],
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/JJ/typescript-module-template/issues"
+    "url": "https://github.com/JJ/ts-milestones/issues"
   },
-  "homepage": "https://github.com/JJ/typescript-module-template#readme",
+  "homepage": "https://github.com/JJ/ts-milestones#readme",
   "devDependencies": {
     "@babel/preset-typescript": "^7.6.0",
     "@types/jest": ">=26.0.0",
