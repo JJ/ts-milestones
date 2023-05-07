@@ -11,11 +11,7 @@ jobs:
           fetch-depth: 1
       - name: Instalación general
         run: npm install
-      - name: Instala tests y cobertura
-        run: sudo npm install -g jest nyc codecov
       - name: Ejecuta tests de cobertura
-        run: nyc jest --coverage
+        run: npm run coverage
       - name: Crea los informes
-        run: nyc report --reporter=json > coverage/coverage.json
-      - name: Sube los tests
-        run: codecov
+        run: npm run coverage-reports
